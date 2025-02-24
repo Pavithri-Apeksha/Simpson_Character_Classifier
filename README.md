@@ -22,3 +22,4 @@ A web application that classifies images of characters from *The Simpsons* using
 ---
 
 ## Project Structure
+![image](https://github.com/user-attachments/assets/ad200da6-ec67-42f2-ae8a-6284cf146238)
