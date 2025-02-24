@@ -46,7 +46,7 @@ A web application that classifies images of characters from *The Simpsons* using
    npm start
 4. The frontend will be available at http://localhost:3000.
 
-###Backend Setup
+### Backend Setup
 1. Navigate to the backend directory:
    ```bash
    cd backend
@@ -66,7 +66,7 @@ A web application that classifies images of characters from *The Simpsons* using
 6. The backend will be available at http://localhost:5000.
 
 ---
-###Running the Project
+### Running the Project
 **Start both the frontend and backend servers.**
 **Open the frontend in your browser (http://localhost:3000).**
 **Upload an image of a Simpson character.**
