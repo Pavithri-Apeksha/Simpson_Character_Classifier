@@ -22,19 +22,3 @@ A web application that classifies images of characters from *The Simpsons* using
 ---
 
 ## Project Structure
-simpson-character-classifier/
-├── frontend/ # React frontend
-│ ├── public/
-│ ├── src/
-│ │ ├── components/ # Reusable components
-│ │ ├── App.js # Main application component
-│ │ ├── App.css # Custom CSS styles
-│ │ └── index.js # Entry point
-│ ├── package.json # Frontend dependencies
-│ └── README.md # Frontend README
-├── backend/ # Flask backend
-│ ├── app.py # Flask application
-│ ├── requirements.txt # Backend dependencies
-│ └── .env # Environment variables
-├── README.md # Project README
-└── .gitignore # Git ignore file
