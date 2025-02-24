@@ -23,3 +23,22 @@ A web application that classifies images of characters from *The Simpsons* using
 
 ## Project Structure
 ![image](https://github.com/user-attachments/assets/ad200da6-ec67-42f2-ae8a-6284cf146238)
+
+## Setup Instructions
+
+### Prerequisites
+
+- **Node.js** (for the frontend)
+- **Python 3.8+** (for the backend)
+- **Azure Custom Vision API Key** (for predictions)
+
+---
+
+### Frontend Setup
+
+1. Navigate to the `frontend` directory:
+   ```bash
+   cd frontend
+2.Install dependencies:
+   ```bash
+   npm install
