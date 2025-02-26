@@ -1,38 +1,141 @@
-.App {
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background: linear-gradient(to right, #e0e7ff, #f3e8ff); /* Gradient background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+.card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 100%;
+  max-width: 400px;
+}
+
+.card-header {
+  background: linear-gradient(to right, #3b82f6, #9333ea); /* Gradient header */
+  padding: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.card-title {
+  font-size: 24px;
+  font-weight: bold;
   color: white;
+  margin: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.card-content {
+  padding: 20px;
+}
+.file-input {
+  width: 100%;
+  margin-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.file-input input[type="file"] {
+  display: none;
+}
+
+.file-input label {
+  display: block;
+  background: #3b82f6;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.file-input label:hover {
+  background: #2563eb;
+}
+
+.image-preview {
+  width: 160px;
+  height: 160px;
+  border: 4px solid #dbeafe;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.image-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.button {
+  width: 100%;
+  background: linear-gradient(to right, #3b82f6, #9333ea);
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.skeleton {
+  background: #e5e7eb;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.skeleton:last-child {
+  margin-bottom: 0;
+}
+
+.prediction-box {
+  margin-top: 20px;
+  padding: 20px;
+  background: #f9fafb;
+  border-radius: 12px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.prediction-box h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #1e293b;
+  margin-bottom: 10px;
+}
+
+.prediction-box pre {
+  font-size: 14px;
+  color: #4b5563;
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.prediction-box p {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #1e293b;
+}
+
+.prediction-box p strong {
+  font-weight: bold;
+}
+
+.prediction-box p.low-probability {
+  color: #ef4444;
+  font-weight: bold;
+  margin-top: 10px;
 }
